@@ -1,4 +1,6 @@
-function sum() {
+function sum(...result1) {
+  return result1.reduce((a, b) => a + b, 0);
+
   // Start coding here !
 }
 

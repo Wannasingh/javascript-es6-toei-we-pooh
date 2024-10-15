@@ -1,5 +1,7 @@
-function sum() {
+function sum(result,...rest) {
   // Start coding here !
+  result += rest.reduce((acc, num) => acc + num, 0);
+  return result
 }
 
 let result1 = sum(1, 2, 3, 4, 5, 6, 7, 8);
